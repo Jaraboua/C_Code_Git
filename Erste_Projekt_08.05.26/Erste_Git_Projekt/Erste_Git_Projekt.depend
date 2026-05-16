@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1778957276 source:c:\users\mostafa\desktop\c_code_git\erste_projekt_08.05.26\erste_git_projekt\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
