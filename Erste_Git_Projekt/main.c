@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include<math.h>
 
-int Durchmesser( int durchmesser ) ;
-float Umfang ( int umfang );
-float Kreis_Flaesche( int KF );
+int Durchmesser( int durchmesser ) ; // Durchmesser Funktion
+float Umfang ( int umfang );        // Umfang Funktion
+float Kreis_Flaesche( int KF );    //  Kreisflaeche Funktion
 
 int main()
 
