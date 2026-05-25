@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1779700727 source:c:\users\mostafa\desktop\c_code_git\6_primzahl\main.c
+	<stdio.h>
+	<stdlib.h>
+
