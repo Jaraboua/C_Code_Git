@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1779657805 source:c:\users\mostafa\desktop\c_code_git\5_gerade_ungerade\primzahl\main.c
+	<stdio.h>
+	<stdlib.h>
+
