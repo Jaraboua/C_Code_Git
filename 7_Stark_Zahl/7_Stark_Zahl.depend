@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1779830132 source:c:\users\mostafa\desktop\c_code_git\7_stark_zahl\main.c
+	<stdio.h>
+	<stdlib.h>
+
