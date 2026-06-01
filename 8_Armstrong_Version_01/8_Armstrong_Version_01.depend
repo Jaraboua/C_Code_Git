@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1780160869 source:c:\users\mostafa\desktop\c_code_git\8_armstrong_version_01\main.c
+	<stdio.h>
+	<stdlib.h>
+

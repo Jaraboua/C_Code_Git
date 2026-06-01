@@ -1,17 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
+/*
 int isArmstrong( int num );
 void printArmstrong( int start , int end );
+*/
 
-/*
 int Ziffer_Anzahl( int Ziffer );
 int iS_Armstrong( int Var );
 int power( int X );
-*/
+
 int main()
 
 {
+
+    /*
     int start , end ;
 
     printf("Enter lower limit to print armstrng numbers:");
@@ -23,8 +26,8 @@ int main()
     printf("All armstrong numbers between %d to %d are :\n", start , end );
     printArmstrong(start, end );
 
+*/
 
-    /*
     long int untergrenzen , obergrenzen ;
     long double oB_Strong , Var ;
     int Zaehler ;
@@ -54,11 +57,13 @@ int main()
     printf("Bitte die Anzahl der Armstrong  eigeben:%d\n", Zaehler );
 
 
-*/
+
 
 
     return 0;
 }
+
+/*
 int isArmstrong( int num )
 {
     int temp , lastDigit , sum ;
@@ -88,8 +93,8 @@ void printArmstrong( int start , int end )
         start++ ;
     }
 }
+*/
 
-/*
 int Ziffer_Anzahl( int  j  )
 {
     int rest  = j ;
@@ -104,10 +109,10 @@ int Ziffer_Anzahl( int  j  )
 
     return temp ;
 }
-*/
 
 
-/*
+
+
 int iS_Armstrong( int Var  )
 {
 
@@ -126,4 +131,4 @@ int iS_Armstrong( int Var  )
 
         return Summe ;
 }
-*/
+

@@ -1,44 +1,79 @@
 #include <stdio.h>
 #include <stdlib.h>
-// Funktionen Prototyp
-int isPrime( int num );
-void printPrimes( int lowerLimit , int upperLimit );
+
+int isArmstrong(int num);
+void printArmstrongs(int lowerLimit, int upperLimit);
 
 int main()
 {
-    int lowerLimit , upperLimit ;
-    printf("Enter the lower and upper limit to list primes:");
-    scanf("%d%d", &lowerLimit, &upperLimit );
+    int lowerLimit, upperLimit;
 
-    printPrimes( lowerLimit , upperLimit );
+    printf("Gib die untere und obere Grenze ein, um Armstrong-Zahlen zu zeigen: \n");
+    if (scanf("%d %d", &lowerLimit, &upperLimit) != 2)
+    {
+        printf("Ungültige Eingabe. Bitte zwei ganze Zahlen eingeben.\n");
+        return 1;
+    }
 
-    return 0 ;
+    if (lowerLimit > upperLimit)
+    {
+        int temp = lowerLimit;
+        lowerLimit = upperLimit;
+        upperLimit = temp;
+    }
 
+    printArmstrongs(lowerLimit, upperLimit);
 
+    return 0;
 }
 
-void printPrimes( int lowerLimit , int upperLimit )
+void printArmstrongs(int lowerLimit, int upperLimit)
 {
-    printf("All prime number between %d to %d are:", lowerLimit , upperLimit );
-    while( lowerLimit <= upperLimit )
+    printf("Armstrong-Zahlen zwischen %d und %d:\n", lowerLimit, upperLimit);
+    for (int num = lowerLimit; num <= upperLimit; num++)
     {
-        if( isPrime(lowerLimit))
+        if (isArmstrong(num))
         {
-            printf("%d\n" , lowerLimit );
+            printf("%d\n", num);
         }
-        lowerLimit++ ;
     }
 }
 
-int isPrime( int num )
+int isArmstrong(int num)
 {
-    int i ;
-    for( i = 2 ; i <= num/2 ; i++ )
+    int original = num;
+    int sum = 0;
+    int digits = 0;
+    int temp = num;
+
+    if (num == 0)
     {
-        if( num % i == 0 )
-        {
-            return 0 ;  // nicht Prim
-        }
+        return 1;
     }
-    return 1 ;   // Prim
+
+    if (num < 0)
+    {
+        return 0;
+    }
+
+    while (temp > 0)
+    {
+        digits++;
+        temp /= 10;
+    }
+
+    temp = num;
+    while (temp > 0)
+    {
+        int digit = temp % 10;
+        int power = 1;
+        for (int i = 0; i < digits; i++)
+        {
+            power *= digit;
+        }
+        sum += power;
+        temp /= 10;
+    }
+
+    return sum == original;
 }
