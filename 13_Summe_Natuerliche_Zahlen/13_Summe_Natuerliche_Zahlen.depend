@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1780771409 source:c:\users\mostafa\desktop\c_code_git\13_summe_natuerliche_zahlen\main.c
+	<stdio.h>
+	<stdlib.h>
+

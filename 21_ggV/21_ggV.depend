@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1781112123 source:c:\users\mostafa\desktop\c_code_git\21_ggv\main.c
+	<stdio.h>
+	<stdlib.h>
+

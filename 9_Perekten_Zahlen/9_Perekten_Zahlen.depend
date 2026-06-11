@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1780338928 source:c:\users\mostafa\desktop\c_code_git\9_perekten_zahlen\main.c
+	<stdio.h>
+	<stdlib.h>
+

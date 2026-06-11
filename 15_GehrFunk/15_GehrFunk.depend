@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1780999023 source:c:\users\mostafa\desktop\c_code_git\15_gehrfunk\main.c
+	<stdio.h>
+	<stdlib.h>
+
