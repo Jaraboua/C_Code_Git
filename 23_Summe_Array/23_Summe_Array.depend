@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1781289492 source:c:\users\mostafa\desktop\c_code_git\23_summe_array\main.c
+	<stdio.h>
+	<stdlib.h>
+
