@@ -109,7 +109,7 @@ int Ziffer_Anzahl( int  j  )
 
     return temp ;
 }
-
+//Hallo ist eine unnötige Kommentare
 
 
 
